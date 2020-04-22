@@ -1,9 +1,9 @@
 import org.apache.zookeeper.*;
 
-import java.io.IOException;
 
 /**
  * Created by Administrator on 2020/4/22.
+ * javaAPI 基本操作
  */
 public class zkClient {
 
@@ -50,7 +50,6 @@ public class zkClient {
             参数3：版本号，-1表示系统自行决定
          */
         zk.setData("/java", "123".getBytes(), -1);
-
         zk.close();
     }
 }
